@@ -127,6 +127,13 @@ console.log(addressBook.sortByName());
 
 console.log(addressBook.searchContacts("Doe"));
 
+console.log("Contacts:");
+addressBook.printContacts();
+
+// Example usage of new search functionality
+const searchResults = addressBook.searchContacts("john");
+console.log("Search results (name containing 'john'):");
+searchResults.forEach((contact) => console.log(`  - ${contact.name}`));
 
 
 
