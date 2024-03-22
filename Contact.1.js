@@ -83,3 +83,9 @@ console.log(addressBook.findContactByName("kate Doe")); //returns undefined
 console.log(addressBook.findContactByName("Kate Doe"));
 console.log(addressBook.sortByName());
 console.log(addressBook.searchContacts("Doe"));
+console.log("Contacts:");
+addressBook.printContacts();
+// Example usage of new search functionality
+var searchResults = addressBook.searchContacts("john");
+console.log("Search results (name containing 'john'):");
+searchResults.forEach(function (contact) { return console.log("  - ".concat(contact.name)); });
